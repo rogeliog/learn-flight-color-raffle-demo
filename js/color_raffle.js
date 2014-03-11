@@ -25,14 +25,22 @@ $(function () {
     });
   });
 
+  var RaffleTrigger = flight.component(function () {
+    this.defaultAttrs({
+      colors: ['red', 'green', 'blue']
+    });
 
-  var colors = ['red', 'green', 'blue'];
+    this.selectColor = function (event, data) {
+      var color = this.attr.colors[Math.floor(Math.random() * this.attr.colors.length)];
+      this.trigger('uiColorSelected', { color: color });
+    };
 
-  $('.Raffle-trigger').on('click', function () {
-    var color = colors[Math.floor(Math.random()*colors.length)];
-    $(this).trigger('uiColorSelected', { color: color });
+    this.after('initialize', function () {
+      this.on('click', this.selectColor);
+    });
   });
 
   History.attachTo('.Raffle-history');
   ColorStat.attachTo('.Raffle-colorStat');
+  RaffleTrigger.attachTo('.Raffle-trigger');
 });
