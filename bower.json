@@ -1,0 +1,19 @@
+{
+  "name": "color-raffle",
+  "version": "0.0.0",
+  "authors": [
+    "Rogelio Guzman <chinog9@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "flight-standalone": "~1.1.3"
+  }
+}

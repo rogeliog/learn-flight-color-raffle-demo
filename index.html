@@ -1,5 +1,8 @@
 <html>
   <head>
+    <link rel="stylesheet" type="text/css" href="css/color_raffle.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/es5-shim/es5-sham.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -7,13 +10,19 @@
     <script src="js/color_raffle.js"></script>
   </head>
   <body>
-    <div class="Raffle">
-      <a href="#" class="Raffle-trigger">Trigger</a>
-      <div class="Raffle-colorStat Raffle-colorStat--blue" data-color="blue">0</div>
-      <div class="Raffle-colorStat Raffle-colorStat--red" data-color="red">0</div>
-      <div class="Raffle-colorStat Raffle-colorStat--green" data-color="green">0</div>
+    <div class="container">
+      <div class="Raffle">
+        <a href="#" class="Raffle-trigger btn btn-default btn-lg">Trigger</a>
+        <div>
+          <div class="Raffle-colorStat Raffle-colorStat--blue" data-color="blue">0</div>
+          <div class="Raffle-colorStat Raffle-colorStat--red" data-color="red">0</div>
+          <div class="Raffle-colorStat Raffle-colorStat--green" data-color="green">0</div>
+        </div>
 
-      <div class="Raffle-history"></div>
+        <h3> History </h3>
+        <ul class="Raffle-history">
+        </ul>
+      </div>
     </div>
   </body>
 </html>

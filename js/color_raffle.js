@@ -15,6 +15,8 @@ $(function () {
     });
   });
 
+
+
   var History = flight.component(function () {
     this.updateHistory = function (event, data) {
       this.$node.append('<li>' + data.color + '</li>');
@@ -24,6 +26,8 @@ $(function () {
       this.on(document, 'uiColorSelected', this.updateHistory);
     });
   });
+
+
 
   var RaffleTrigger = flight.component(function () {
     this.defaultAttrs({

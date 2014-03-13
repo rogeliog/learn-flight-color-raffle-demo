@@ -1,0 +1,51 @@
+.Raffle {
+  display: block;
+  width: 190px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.Raffle-trigger {
+  width: 190px;
+}
+
+.Raffle-colorStat {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px;
+  color: #FFF;
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.Raffle-colorStat--red {
+  background: #F00;
+}
+
+.Raffle-colorStat--green {
+  background: #0F0;
+}
+
+.Raffle-colorStat--blue {
+  background: #00F;
+}
+
+.Raffle-history {
+  height: 190px;
+  width: 190px;
+  border-radius: 5px;
+  border: 1px solid #EEE;
+  overflow: auto;
+  padding: 10px;
+}
+
+.Raffle-history li {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+}
+
